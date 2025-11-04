@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تنبيه أمني - UTAS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            background-color: #fff;
+            padding: 50px 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 100%;
+            border-top: 6px solid #ffc107;
+            animation: fadeIn 0.6s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+        
+        h1 {
+            color: #d9534f;
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+        
+        p {
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        
+        .warning-box {
+            background-color: #fff3cd;
+            border-right: 4px solid #ffc107;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        
+        .warning-box h3 {
+            color: #856404;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .warning-box ul {
+            margin-right: 20px;
+            color: #856404;
+        }
+        
+        .warning-box li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        
+        .learn-more-link {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px 35px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+        }
+        
+        .learn-more-link:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 14px;
+        }
+        
+        .footer strong {
+            color: #666;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 26px;
+            }
+            
+            .icon {
+                font-size: 48px;
+            }
+            
+            p, .subtitle {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="icon">⚠️</div>
+        <h1>لقد وقعت في فخ التصيّد!</h1>
+        <p class="subtitle">This was a Phishing Simulation Test</p>
+        
+        <p>
+            <strong>لا تقلق!</strong> هذه الرسالة كانت جزءًا من اختبار وعي بالأمن السيبراني ضمن مشروع أكاديمي في جامعة التقنية والعلوم التطبيقية - نزوى. الهدف هو التدريب على اكتشاف الرسائل الاحتيالية، وليس جمع بياناتك الشخصية.
+        </p>
+        
+        <div class="warning-box">
+            <h3>🔍 كيف تكتشف رسائل التصيّد؟</h3>
+            <ul>
+                <li>تحقق من عنوان البريد الإلكتروني للمرسل بدقة</li>
+                <li>لا تضغط على الروابط المشبوهة - مرر الماوس فوقها أولاً</li>
+                <li>انتبه للأخطاء اللغوية والإملائية</li>
+                <li>كن حذرًا من الرسائل التي تطلب معلومات حساسة</li>
+                <li>لا تتسرع في اتخاذ القرار عند قراءة رسائل "عاجلة"</li>
+            </ul>
+        </div>
+        
+        <a href="https://www.cisa.gov/secure-our-world/recognize-and-report-phishing" class="learn-more-link" target="_blank">
+            📚 تعلم المزيد عن الأمن السيبراني
+        </a>
+        
+        <div class="footer">
+            <strong>مشروع الأمن السيبراني</strong><br>
+            University of Technology and Applied Sciences - Nizwa<br>
+            هذا المشروع لأغراض تعليمية فقط
+        </div>
+    </div>
+
+</body>
+</html>
